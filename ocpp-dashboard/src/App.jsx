@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     const interval = setInterval(async () => {
-      const res = await axios.get("https://your-backend.onrender.com/api/telemetry/latest");
+      const res = await axios.get("https://ocpp-dashboard.onrender.com");
       setTelemetry(res.data);
       setStatus("Charging");
     }, 2000);
